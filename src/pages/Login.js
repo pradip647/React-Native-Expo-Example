@@ -2,12 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View,Button } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
-// import Header from '../components/Header';
+ import {Header,Input} from '../components';
 
 class LoginScreen extends React.Component {
     static navigationOptions = {
         title: 'Login Page',
-        // header: null,
+         header: null,
       };
 
     _handlePress = () => {
@@ -16,7 +16,8 @@ class LoginScreen extends React.Component {
   render() {
     return (
         <View style={{flex:1}}>
-            {/* <Header headerText="Login"/> */}
+            <Header headerText="Login"/>
+            <Input placeholder="Please Enter your Username"/>
             <View style={styles.container}>
                 <Text>This is Login Page....!!</Text>
                 <Button title="clickme..!!" onPress={this._handlePress}/>
