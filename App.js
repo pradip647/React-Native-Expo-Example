@@ -16,11 +16,11 @@ export default class App extends React.Component {
   render() {
     return (
           <Router>
-            <Stack key="root">
-            <Scene key="login" component={LoginScreen}/>
-            <Scene key="register" component={RegistrationScreen} title="Register" />
-            <Scene key="home" component={HomeScreen} />
-            </Stack>
+              <Stack key="root">
+                  <Scene key="login" component={LoginScreen}/>
+                  <Scene key="register" component={RegistrationScreen} title="Register" />
+                  <Scene key="home" component={HomeScreen} />
+              </Stack>
           </Router>
     );
   }
