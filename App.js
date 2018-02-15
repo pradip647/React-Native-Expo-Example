@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import LoginScreen from './src/pages/Login';
 import HomeScreen from './src/pages/Home';
 import RegistrationScreen from './src/pages/Registration';
+import FeatureList from './src/pages/FeatureList';
 // import {
 //   StackNavigator,
 // } from 'react-navigation';
@@ -17,6 +18,7 @@ export default class App extends React.Component {
     return (
           <Router>
               <Stack key="root">
+                  <Scene key="FeatureList" component={FeatureList}/>
                   <Scene key="login" component={LoginScreen}/>
                   <Scene key="register" component={RegistrationScreen} title="Register" />
                   <Scene key="home" component={HomeScreen} />
